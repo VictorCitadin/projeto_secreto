@@ -1,3 +1,11 @@
+function setViewportHeight() {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`); 
+}
+setViewportHeight();
+window.addEventListener('resize', setViewportHeight);
+document.addEventListener('DOMContentLoaded', setViewportHeight);
+
 document.addEventListener('DOMContentLoaded', () => {
   const images = document.querySelectorAll('.passador-de-fotos img');
   const prevBtn = document.getElementById('prevBtn');
