@@ -11,11 +11,12 @@ body {
 
 .container {
   width: 100vh;
-  max-width: 365px;
+  max-width: 350px;
   background-color: #10265b;
   border-radius: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  padding-bottom: 10px;
 }
 
 .spotify-widget{
