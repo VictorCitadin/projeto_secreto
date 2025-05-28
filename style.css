@@ -9,10 +9,10 @@ body {
   color: #333;
 }
 
-.container {
-  width: 80vh;
-  height: 660px;
-  max-width: 365px;
+container {
+  width: 50vh;
+  height: fit-content;
+  max-width: 360px;
   background-color: #10265b;
   border-radius: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
