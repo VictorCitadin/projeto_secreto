@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 15px;
   font-family: 'Roboto', sans-serif;
   display: flex;
   justify-content: center;
@@ -7,19 +7,16 @@ body {
   min-height: 100vh;
   background-color: #253f81;
   color: #333;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 .container {
-  width: 90%;
-  height: auto;
-  max-width: 360px;
+  width: 100vh;
+  max-width: 375px;
   background-color: #10265b;
   border-radius: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  padding-bottom: 5px;
+  padding-bottom: 3px;
 }
 
 .spotify-widget{
