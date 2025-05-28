@@ -10,7 +10,8 @@ body {
 }
 
 .container {
-  width: 100vh;
+  width: 90vh;
+  height: 95vh;
   max-width: 365px;
   background-color: #10265b;
   border-radius: 20px;
