@@ -7,17 +7,19 @@ body {
   min-height: 100vh;
   background-color: #253f81;
   color: #333;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-container {
-  width: 50vh;
-  height: fit-content;
+.container {
+  width: 90%;
+  height: auto;
   max-width: 360px;
   background-color: #10265b;
   border-radius: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
 }
 
 .spotify-widget{
