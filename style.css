@@ -7,6 +7,82 @@ body {
   min-height: 100vh;
   background-color: #253f81;
   color: #333;
+  overflow-x: hidden; /* Evita rolagem lateral indesejada */
+}
+
+.background-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Garante que fique atrás de tudo */
+  pointer-events: none; /* Permite clicar através do fundo */
+}
+
+.background-animation span {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(50px); /* O efeito desfocado */
+  opacity: 0.6;
+  animation: moveBlobs infinite alternate ease-in-out;
+}
+
+/* Configuração de cada "bola" para tamanhos e posições variadas */
+.background-animation span:nth-child(1) {
+  top: 10%;
+  left: 20%;
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 0, 0, 0.586); /* Vermelho mais vivo */
+  animation-duration: 12s;
+}
+
+.background-animation span:nth-child(2) {
+  top: 60%;
+  left: 80%;
+  width: 400px;
+  height: 400px;
+  background: rgba(255, 20, 20, 0.656);
+  animation-duration: 18s;
+  animation-delay: -5s;
+}
+
+.background-animation span:nth-child(3) {
+  top: 40%;
+  left: 40%;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 50, 50, 0.779);
+  animation-duration: 10s;
+  animation-delay: -10s;
+}
+
+.background-animation span:nth-child(4) {
+  top: 80%;
+  left: 10%;
+  width: 250px;
+  height: 250px;
+  background: rgba(255, 0, 0, 0.908);
+  animation-duration: 14s;
+  animation-delay: -2s;
+}
+
+.background-animation span:nth-child(5) {
+  top: 10%;
+  left: 90%;
+  width: 350px;
+  height: 350px;
+  background: rgba(255, 30, 30, 0.914);
+  animation-duration: 16s;
+  animation-delay: -8s;
+}
+
+@keyframes moveBlobs {
+  0% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(80px, -50px) scale(1.1); }
+  66% { transform: translate(-40px, 60px) scale(0.9); }
+  100% { transform: translate(20px, -20px) scale(1.05); }
 }
 
 .container {
@@ -27,6 +103,9 @@ body {
 
 .spotify-widget iframe{
   display: block;
+  width: 100%;
+  height: 210px;
+  border-radius: 12px;
 }
 
 .passador-de-fotos{
